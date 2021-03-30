@@ -44,8 +44,23 @@
 
       <h1 style="font-size:50px">Ask Ms. Foodie: </h1>
 
-      <button>Search for Food</button>
 
+      <div class="col-lg-12 mb-12">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Search for Food</h4>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Zip code here" aria-label="Search"
+                id="search-input">
+              <button class="btn btn-outline-success" type="submit" id="search-food">Search for food</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="results">
+
+      </div>
 
     </container>
 
@@ -71,9 +86,17 @@
   </footer>
 </div>
 
+{{!-- jQuery Link --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{{!-- Path is made relative to public folder --}}
+<script src="./javascript/search.js"></script>
+
 {{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
+<script src="./javascript/logout.js"></script>
+
 {{/if}}
+
+
 </body>
 
 </html>

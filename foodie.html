@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Ms New Foodie Search</title>
+  <style type="text/css">
+    #header {
+      color: rgb(173, 61, 61);
+      background-color: rgb(165, 161, 168);
+      font-size: 40px;
+      text-align: center;
+      padding: 5px;
+    }
+   #header2 {
+     background-color: white;
+     }
+  </style>
+</head>
+​
+<body>
+  <div class="navbar-expand-lg navbar-dark bg-light fixed-top">
+    <div id="header">Ms. New Foodie</div>
+  </div>
+​
+​
+  <div class="container">
+​
+    <header class="jumbotron" id="header2">
+​
+    </header>
+​
+​
+    <div class="row text-center">
+​
+      <div class="col-lg-12 mb-12">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title">Search for a Food</h4>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Zip code here" aria-label="Search" id="search-input">
+              <button class="btn btn-outline-success" type="submit" id="search-food">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+​
+    <div class="row">
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-0">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-1">
+          </div>
+        </div>
+      </div>
+​
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-2">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-3">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-4">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-5">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-6">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-7">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-8">
+          </div>
+        </div>
+      </div>
+​
+      <div class="col-lg-6 mb-6">
+        <div class="card h-100">
+          <div class="card-body text-left box" id="card-9">
+          </div>
+        </div>
+      </div>
+​
+    </div>
+​
+​
+  </div>
+​
+​
+​
+​
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+​
+     function inisialiser() {
+       $('#card-0').empty();
+       $('#card-1').empty();
+       $('#card-2').empty();
+       $('#card-3').empty();
+       $('#card-4').empty();
+       $('#card-5').empty();
+       $('#card-6').empty();
+       $('#card-7').empty();
+       $('#card-8').empty();
+       $('#card-9').empty();
+     }
+​
+​
+$("#search-food").on("click", function(event) {
+         event.preventDefault();
+​
+​
+  const zipcode = $("#search-input").val().trim();
+​
+  const settings = {
+    async: true,
+    crossDomain: true,
+    url:
+      `https://us-restaurant-menus.p.rapidapi.com/restaurants/zip_code/${zipcode}?page=1`,
+    method: "GET",
+    headers: {
+      "x-rapidapi-key":
+        "980fbf3eb4msh7995ecf778f3f83p1f9cdejsn73478224c087",
+      "x-rapidapi-host": "us-restaurant-menus.p.rapidapi.com",
+    },
+  };
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+    console.log(response.result.data[0].address.formatted);
+    for (let i = 0; i < 10; i++) {
+​
+let name = response.result.data[i].restaurant_name;
+let address = response.result.data[i].address.formatted;
+let cuisine = response.result.data[i].cuisines[0];
+​
+$('#card-' + i).css('background-color', 'rgb(0, 153, 153)');
+$('#card-' + i).css('color', 'white');
+$('#card-' + i).append($('<h2>').text(name));
+$('#card-' + i).append($('<div>').text('Cuisine: ' + cuisine));
+$('#card-' + i).append($('<div>').text("Address: " + address));
+}
+​
+​
+    
+  });
+  
+inisialiser();
+ });
+ 
+ </script>
+</body>
+​
+ </html>
+​
