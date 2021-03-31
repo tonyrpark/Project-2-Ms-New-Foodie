@@ -17,14 +17,6 @@
 
 # Technologies Used
 
-- Handlebars
-- Express.js
-- Node.js
-- Bootstrap
-- Favicon
-- MySQL
-- Heroku
-
 ## Major Elements
 
 -Models
