@@ -6,7 +6,7 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
 # Screenshots:
 
 1. GIF of App 1
-   ![GIF of App 1](images/app1.gif)
+   ![GIF of App 1](./public/images/app1.gif)
 
 2. GIF of App 2
    ![GIF of App 2](./images/app2.gif)
