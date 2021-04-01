@@ -1,4 +1,9 @@
-# Screenshots and GIFs:
+PROJECT #2
+Project team: Tony, Mike, Robert, Omar
+Project Name: Ludicrous Landslide Group
+Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
+
+# Screenshots:
 
 1. GIF of App 1
    ![GIF of App 1](./images/app1.gif)
