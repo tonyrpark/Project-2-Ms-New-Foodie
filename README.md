@@ -9,35 +9,35 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
    ![GIF of App 1](./public/images/app1.gif)
 
 2. GIF of App 2
-   ![GIF of App 2](./images/app2.gif)
+   ![GIF of App 2](./public/images/app2.gif)
 
 3. Screenshot of App 1
    <br>
-   ![Screenshot 1](./images/screenshot1.jpg)
+   ![Screenshot 1](./public/images/screenshot1.jpg)
 
 4. Screenshot of App 2
    <br>
-   ![Screenshot 2](./images/screenshot2.jpg)
+   ![Screenshot 2](./public/images/screenshot2.jpg)
 
 5. Screenshot of App 3
    <br>
-   ![Screenshot 3](./images/screenshot3.jpg)
+   ![Screenshot 3](./public/images/screenshot3.jpg)
 
 6. GET Request
    <br>
-   ![GET Request](./images/getRequest.gif)
+   ![GET Request](./public/images/getRequest.gif)
 
 7. POST Request
    <br>
-   ![POST Request](./images/postRequest.gif)
+   ![POST Request](./public/images/postRequest.gif)
 
 8. PUT Request
    <br>
-   ![PUT Request](./images/putRequest.gif)
+   ![PUT Request](./public/images/putRequest.gif)
 
 9. DELETE Request
    <br>
-   ![DELETE Request](./images/delete.gif)
+   ![DELETE Request](./public/images/delete.gif)
 
 # Technologies Used
 
