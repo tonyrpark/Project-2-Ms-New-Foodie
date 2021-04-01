@@ -37,20 +37,60 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
 
 9. DELETE Request
    <br>
-   ![DELETE Request](./public/images/delete.gif)
+   ![DELETE Request](./public/images/deleteRequest.gif)
 
-# Technologies Used
+10. DELETE Request
+    <br>
+    ![login](./public/images/login.jpg)
 
-## Major Elements
+11. DELETE Request
+    <br>
+    ![signup](./public/images/signup.jpg)
 
--Models
--Views
--Controllers
+# Coding Requirements Hit
 
-### Installation and Setup
+[x] Must use Node.js and Express.js to create a RESTFUL API
+[x] Must use Handlebars.js as the template engine
+[x] Must use MySQL and the Sequelize ORM for the database
+[x] Must have both GET and POST routes for retrieving and adding new data
+[x] Must use at least one new library, package, or technology that we haven't discussed --- Restaurant API, JawsDB, bulma package for style, nodemon for server refreshes
+[x] Must have a folder structure that meets the MVC paradigm
+[x] Must include authentication (express-session and cookies)
+[x] Must protect API keys and sensitive information with environment variables (bcrypt, jawsDB)
 
-- Run 'npm i' before install
-- Port is set to 3306 on MySQL and 8080 on client side
-- Ensure .env file is at root
+## Additional Requirements
+
+[x] Must be deployed using Heroku (with data)
+[x] Must have a polished UI
+[x] Must be responsive (check out our website on your mobile phone!)
+[x] Must be interactive
+[x] Must meet good-quality coding standards
+[x] Must have a professional README
+
+### Technologies Used
+
+- Express
+- Sequelize
+- JawsDB
+- bcrypt
+- Heroku
+- Javascript
+- HTML
+- CSS
+- OBS
+- Restaurant API
+- Bulma Package
+- Bootstrap
+- Adobe Photoshop
+- mySQL Workbench
+- mysql2
+- axios
+- express-handlebars
+- express-session
+- nodemon
+- favicon
+- unirest
+- Postman
+- ShareX
 
 © Ludicrous Landslide Group 2021
