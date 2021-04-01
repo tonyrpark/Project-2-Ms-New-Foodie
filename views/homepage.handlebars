@@ -1,8 +1,17 @@
-{{#each posts as |post|}}
+<div class="container">
+    <h1 class="main-heading">Search restaurants with Ms. New Foodie</h1>
+    <div class="search-form">
+        <input id="search-tb" type="text" placeholder="search by postal code" name="search-tb">
+        <button id="search-btn">Search</button>
+    </div>
+</div>
+{{#each restaurantData as |restaurant|}}
 
-{{> post-info post }}
+{{> restaurant-list restaurant }}
 </div>
 
 {{else}}
-<h6 class="pb-4 has-text-centered is-italic">There are currently no reviews...</h6>
+<h6 class="pb-4 has-text-centered is-italic">Waiting for restaurant list</h6>
 {{/each}}
+
+<script src="/javascript/home-page.js"></script>

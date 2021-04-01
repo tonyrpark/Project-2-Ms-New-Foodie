@@ -7,18 +7,8 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-
-a:hover {
-  color: #78c4d4;
 }
 
 button {
@@ -147,15 +137,170 @@ main {
 .edit-post-form {
   margin-bottom: 5%;
 }
+.navbar{
+  background-color: #d3e0ea;
+  display: inline-block;
+  width: 100%;
+}
+.nav-items-cont{
+  float: right;
+  padding-top: 50px;
+}
+.nav-items-cont .nav-links{
+  padding:10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  color:#276678;
+  border-bottom: 3px solid #276678;
+  transition: all 0.5s ease-in;
+}
+.nav-items-cont .nav-links:hover{
+  border-bottom: 3px solid rgb(8, 204, 83);
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+.item-card{
+  padding: 20px;
+  background-color: #f0f0f1;
+  border:2px solid #1687a7;
+  box-shadow: 1px 7px 14px -1px #d3e0ea;
+-webkit-box-shadow: 1px 7px 14px -1px #d3e0ea;
+-moz-box-shadow: 1px 7px 14px -1px #d3e0ea;
+}
+.item-card h2{
+    font-size:26px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(8, 204, 83);
+    margin-bottom:20px;
+}
+.w-70{
+  width: 70%;
+}
+.item-subheading{
+    font-size:22px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#1687a7;
+  }
+.cuisine-item{
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color:#276678;
+  overflow-wrap: break-word;
+}
+.item-content h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color:#ff643d;
+  text-transform: capitalize;
+}
+.item-content p{
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.item-sub-h{
+  margin-top:20px;
+  margin-bottom: 10px;
+  font-size:18px;
+  font-weight: 600;
+}
+.rating-num{
+  color: #10b1fc;
+  margin-right:2px;
+  font-size:36px;
+  font-weight: 600;
+}
+.rating-icon{
+  color: #c59b08;
+  margin-bottom: 2px;
+}
+.item-sub-text{
+  font-size: 16px !important;
+}
 
+.comment-link{
+  display:inline-block;
+  margin-top: 30px;
+  margin-right:5px;
+  font-size:18px;
+  font-weight: 600;
+  color:rgb(8, 204, 83);
+}
+.main-heading{
+    font-size: 42px;
+    margin:20px 0px;
+    font-weight: 600;
+    color: #333;
+}
+.search-form input{
+    width: 80%;
+    border-radius: 0px;
+    font-size:22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:1px solid rgb(8, 204, 83);
+    padding:5px 10px;
+}
+.search-form input:focus,input:active{
+  border:1px solid #276678;
+}
+.search-form button{
+  border-radius: 0px;
+  background-color: rgb(8, 204, 83);
+  padding:6px 30px;
+  margin-left: 20px;
+  font-size: 22px;
+  transition: background 0.3s ease-in;
+}
+.search-form button:hover{
+  background-color: #276678;
+  color:#f6f5f5;
+}
 footer {
   border-top: 1px solid #ccc;
   display: flex;
+  background-color: #276678 !important;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
 }
+.footer-content{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:22px;
+  color:#eee;
+}
+.footer-content a{
+  color: rgb(8, 204, 83);
+}
+.btn-review{
+    padding:5px 10px;
+    color:rgb(8, 204, 83);
+    border:1px solid rgb(8, 204, 83);
+}
+.btn-review img{
+  width:20px;
+  height:20px;
+}
+.btn-fav{
+  padding:5px 10px;
+  color:rgb(228, 96, 173);
+  border:1px solid rgb(228, 96, 173);
+}
+.btn-fav img{
+  width:20px;
+  height:20px;
+}
 
+.f-sm{
+  font-size: 18px;
+}
 .card {
   margin-bottom: 1em;
   margin-top: 1em;
@@ -179,8 +324,8 @@ footer {
 }
 
 .foodieLogo {
-  width: 100%;
-  height: auto;
+  width: 100%,
+  height: auto; 
 }
 
 /* Star Rating CSS Below: */
@@ -190,27 +335,27 @@ footer {
   padding: 0 10px;
 }
 .rate:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
+  position:absolute;
+  top:-9999px;
 }
 .rate:not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #ccc;
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
 }
 .rate:not(:checked) > label:before {
-  content: "★ ";
+  content: '★ ';
 }
 .rate > input:checked ~ label {
-  color: #ffc700;
+  color: #ffc700;    
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
+  color: #deb217;  
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
@@ -220,7 +365,3 @@ footer {
   color: #c59b08;
 }
 
-.restaurantCard {
-  background-color: rgb(0, 153, 153);
-  color: white;
-}

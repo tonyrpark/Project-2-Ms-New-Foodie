@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ms. New Foodie</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
   {{!--
@@ -17,59 +17,37 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
-<div class="wrapper">
-  <header>
-    <a href="/" class="foodieLogo"><img
+
+  <header class="navbar">
+    <div class="wrapper">
+   
+    {{!-- <h1 class="has-text-black px-3 py-3 has-text-weight-bold coolTitle">Ms. New Foodie</h1> --}}
+    <nav >
+       <a href="/" class="foodieLogo"><img
         src="https://hosting.photobucket.com/images/kk166/tonyfcpremix/msNewFoodie-small(1).png"
         alt="MsNewFoodie Logo" /></a>
-    {{!-- <h1 class="has-text-black px-3 py-3 has-text-weight-bold coolTitle">Ms. New Foodie</h1> --}}
-    <nav class="navbar mt-2">
       {{#if loggedIn}}
-      <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
-      <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
-      <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Create Review</a>
+       <div class="nav-items-cont">
+       <a href="/" class="nav-links">Home</a>
+      <a href="/dashboard" class="nav-links">Dashboard</a>
+      <a href="/dashboard/create/" class="nav-links">Create Review</a>
       <button id="logout" class="button is-danger">Logout</button>
+      </div>
       {{else}}
-      <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
-      <a href="/login" class="button is-primary loginButton">Login</a>
+      <div class="nav-items-cont">
+      <a href="/" class="nav-links">Homepage</a>
+      <a href="/login" class="nav-links">Login</a>
+      </div>
       {{/if}}
     </nav>
+    </div>
   </header>
-
-  <main>
-    <container
-      style="background-image: url('https://hosting.photobucket.com/images/kk166/tonyfcpremix/msNewFoodieHero.jpg');">
-
-
-
-      <h1 style="font-size:50px">Ask Ms. Foodie: </h1>
-
-
-      <div class="col-lg-12 mb-12">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="card-title">Search for Food</h4>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Zip code here" aria-label="Search"
-                id="search-input">
-              <button class="btn btn-outline-success" type="submit" id="search-food">Search for food</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div id="results">
-
-      </div>
-
-    </container>
-
-    {{{ body }}}
-  </main>
-
+<div class="container">
+     {{{ body }}}
+</div>
   <footer class="footer rows pb-2">
     <div class="row-is-full content has-text-centered">
-      <p>
+      <p class="footer-content">
         <a href="/">Homepage</a>{{#if loggedIn}} |
         <a href="/dashboard/">Dashboard</a> |
         <a href="/dashboard/create/">Create a New Review</a>
@@ -79,24 +57,16 @@
       </p>
     </div>
     <div class="row-is-full content has-text-centered">
-      <p>
+      <p class="footer-content f-sm">
         Ms. New Foodie App by <a href="https://github.com/tonyrpark">Ludicrous Landslide Group</a>
       </p>
     </div>
   </footer>
-</div>
 
-{{!-- jQuery Link --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-{{!-- Path is made relative to public folder --}}
-<script src="./javascript/search.js"></script>
 
 {{#if loggedIn}}
-<script src="./javascript/logout.js"></script>
-
+<script src="/javascript/logout.js"></script>
 {{/if}}
-
-
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+<div class="item-card mb-5 mt-5">
+    <div class="row mb-2">
+        <div class="col-12 col-md-6 col-lg-8 col-xl-8">
+            <h2>{{restaurant_name}}</h2>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+            <button class="btn-review"><img src="/images/review.png" alt="image"> Add Review</button>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+            <button class="btn-fav"><img src="/images/heart-light.png" alt="image"> Add Favorite</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                <h3 class="item-subheading"><img src="/images/cuisine.png" style="margin-bottom: 20px;" alt=""> Cuisine
+                </h3>
+                <p class="cuisine-item">{{cuisines}}</p>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                <h3 class="item-subheading"><img src="/images/clock.png" style="margin-bottom: 20px;" alt=""> Hours</h3>
+                <p class="cuisine-item">{{hours}}</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                <h3 class="item-subheading"><img src="/images/address.png" style="margin-bottom: 20px;" alt=""> Address
+                </h3>
+                <p class="cuisine-item">{{address.formatted}}</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                <h3 class="item-subheading"><img src="/images/phone.png" style="margin-bottom: 20px;" alt=""> Phone</h3>
+                <p class="cuisine-item">{{restaurant_phone}}</p>
+            </div>
+        </div>
+    </div>
