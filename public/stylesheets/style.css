@@ -138,25 +138,26 @@ main {
   margin-bottom: 5%;
 }
 .navbar{
-  background-color: #d3e0ea;
+  background-color: white;
   display: inline-block;
   width: 100%;
+  box-shadow: none;
 }
 .nav-items-cont{
   float: right;
   padding-top: 50px;
 }
 .nav-items-cont .nav-links{
-  padding:10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-style: italic;
+  padding:7px;
+  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-style: italic; */
   font-size: 18px;
-  color:#276678;
-  border-bottom: 3px solid #276678;
+  color: black;
+  border-bottom: 3px solid #fc7063;
   transition: all 0.5s ease-in;
 }
 .nav-items-cont .nav-links:hover{
-  border-bottom: 3px solid rgb(8, 204, 83);
+  border-bottom: 3px solid #252525;
 }
 a {
   text-decoration: none;
@@ -165,8 +166,8 @@ a {
 }
 .item-card{
   padding: 20px;
-  background-color: #f0f0f1;
-  border:2px solid #1687a7;
+  background-color: #f3f4ed;
+  border:2px dotted black;
   box-shadow: 1px 7px 14px -1px #d3e0ea;
 -webkit-box-shadow: 1px 7px 14px -1px #d3e0ea;
 -moz-box-shadow: 1px 7px 14px -1px #d3e0ea;
@@ -175,7 +176,7 @@ a {
     font-size:26px;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:rgb(8, 204, 83);
+    color:#fc7063;
     margin-bottom:20px;
 }
 .w-70{
@@ -245,19 +246,22 @@ a {
     border-radius: 0px;
     font-size:22px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border:1px solid rgb(8, 204, 83);
+    border:1px solid #536162;
     padding:5px 10px;
+    border-radius: 25px;
 }
 .search-form input:focus,input:active{
   border:1px solid #276678;
 }
 .search-form button{
+  color: white;
   border-radius: 0px;
-  background-color: rgb(8, 204, 83);
+  background-color: #fc7063;
   padding:6px 30px;
   margin-left: 20px;
   font-size: 22px;
   transition: background 0.3s ease-in;
+  border-radius: 25px;
 }
 .search-form button:hover{
   background-color: #276678;
@@ -266,32 +270,34 @@ a {
 footer {
   border-top: 1px solid #ccc;
   display: flex;
-  background-color: #276678 !important;
+  background-color: #303f56 !important;
   justify-content: center;
   padding: 1%;
   font-size: 110%;
 }
 .footer-content{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size:22px;
-  color:#eee;
+  color:#fc7063;
 }
 .footer-content a{
-  color: rgb(8, 204, 83);
+  color: white;
 }
 .btn-review{
-    padding:5px 10px;
-    color:rgb(8, 204, 83);
-    border:1px solid rgb(8, 204, 83);
+  font-family: 'Montserrat';
+  padding:5px 10px;
+  color: black;
+  border:1px solid black;
 }
 .btn-review img{
   width:20px;
   height:20px;
 }
 .btn-fav{
+  font-family: 'Montserrat';
   padding:5px 10px;
-  color:rgb(228, 96, 173);
-  border:1px solid rgb(228, 96, 173);
+  color: black;
+  border:1px solid black;
 }
 .btn-fav img{
   width:20px;
