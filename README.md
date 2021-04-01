@@ -1,4 +1,5 @@
-PROJECT #2
+# PROJECT #2
+
 Project team: Tony, Mike, Robert, Omar
 Project Name: Ludicrous Landslide Group
 Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
@@ -58,7 +59,7 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
 [x] Must include authentication (express-session and cookies)
 [x] Must protect API keys and sensitive information with environment variables (bcrypt, jawsDB)
 
-## Additional Requirements
+# Additional Requirements
 
 [x] Must be deployed using Heroku (with data)
 [x] Must have a polished UI
@@ -67,7 +68,7 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
 [x] Must meet good-quality coding standards
 [x] Must have a professional README
 
-### Technologies Used
+# Technologies Used
 
 - Express
 - Sequelize
