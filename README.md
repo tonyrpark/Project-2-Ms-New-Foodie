@@ -40,11 +40,11 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
    <br>
    ![DELETE Request](./public/images/deleteRequest.gif)
 
-10. DELETE Request
+10. Login
     <br>
     ![login](./public/images/login.jpg)
 
-11. DELETE Request
+11. Signup
     <br>
     ![signup](./public/images/signup.jpg)
 
