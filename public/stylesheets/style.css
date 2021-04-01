@@ -322,11 +322,13 @@ footer {
 }
 
 .cardHeader {
-  background-color: #99bbad;
+  font-family: 'Merriweather';
+  font-size: 25px;
+  background-color: #fc7063;
 }
 
 .cardContent {
-  background-color: #ebd8b7;
+  background-color: #f0e4d7;
 }
 
 .foodieLogo {
