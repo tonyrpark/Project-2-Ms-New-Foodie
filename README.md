@@ -4,6 +4,15 @@ Project team: Tony, Mike, Robert, Omar
 Project Name: Ludicrous Landslide Group
 Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
 
+
+
+# Table of Contents
+
+- [Screenshots](#screenshots)
+- [Coding-Requirements-Hit](#Coding-Requirements-Hit)
+- [Additional-Requirements](#Additional-Requirements)
+- [Technologies-Used](#Technologies-Used)
+
 # Screenshots:
 
 1. GIF of App 1
@@ -48,7 +57,7 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
     <br>
     ![signup](./public/images/signup.jpg)
 
-# Coding Requirements Hit
+## Coding-Requirements-Hit
 
 [x] Must use Node.js and Express.js to create a RESTFUL API <br>
 [x] Must use Handlebars.js as the template engine <br>
@@ -59,7 +68,7 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
 [x] Must include authentication (express-session and cookies) <br>
 [x] Must protect API keys and sensitive information with environment variables (bcrypt, jawsDB) <br>
 
-# Additional Requirements
+## Additional-Requirements
 
 [x] Must be deployed using Heroku (with data) <br>
 [x] Must have a polished UI <br>
@@ -68,7 +77,7 @@ Project name and Summary: Ms. New Foodie, a Foodie app for real Foodies.
 [x] Must meet good-quality coding standards <br>
 [x] Must have a professional README
 
-# Technologies Used
+## Technologies-Used
 
 - Express
 - Sequelize
