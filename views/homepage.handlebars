@@ -1,17 +1,98 @@
+<style>
+    /* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+</style>
 <div class="container">
     <h1 class="main-heading">Search Top Restaurants with Ms. New Foodie</h1>
     <div class="search-form">
         <input id="search-tb" type="text" placeholder=" Search by Postal Code" name="search-tb">
-        <button id="search-btn">Search</button>
+        <button id="search-btn" class="s-btn">Search</button>
     </div>
+      <div class="py-5">
+        <div id="map" ></div>
+        
+        <script>
+              document.getElementById("search-btn").addEventListener("click", ()=>{
+                function initMap() {
+                    // The location of Uluru
+                    const zc = document.getElementById('search-tb').value();
+                    console.log(zc)
+                    const Http = new XMLHttpRequest();
+                    const url=`https://maps.googleapis.com/maps/api/geocode/json?address=${zc}&key=AIzaSyAdVXKWQ5zqqDvPXzTKszQOUCNi-1Dfeyw`;
+                    Http.open("GET", url);
+                    Http.send();
+                    
+                    Http.onreadystatechange = (e) => {
+                    const respons = JSON.parse(Http.responseText);
+                        const uluru = respons.results[0].geometry.location;
+                        // The map, centered at Uluru
+                        const map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 10,
+                            center: uluru,
+                        });
+                        // The marker, positioned at Uluru
+                        const marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map,
+                        });
+                    }
+                
+                    
+                }
+                initMap();
+            });
+
+            
+                function initMap() {
+                    // The location of Uluru
+                    const zc = 92602
+                    const Http = new XMLHttpRequest();
+                    const url=`https://maps.googleapis.com/maps/api/geocode/json?address=${zc}&key=AIzaSyAdVXKWQ5zqqDvPXzTKszQOUCNi-1Dfeyw`;
+                    Http.open("GET", url);
+                    Http.send();
+                    
+                    Http.onreadystatechange = (e) => {
+                    const respons = JSON.parse(Http.responseText);
+                        const uluru = respons.results[0].geometry.location;
+                        // The map, centered at Uluru
+                        const map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 10,
+                            center: uluru,
+                        });
+                        // The marker, positioned at Uluru
+                        const marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map,
+                        });
+                    }
+                
+                    
+                }  
+   
+          
+            
+        </script>
+        
+</div>
 </div>
 {{#each restaurantData as |restaurant|}}
 
 {{> restaurant-list restaurant }}
+
 </div>
 
 {{else}}
 <h6 class="pb-4 has-text-centered is-italic">Waiting for restaurant list</h6>
 {{/each}}
-
+ 
 <script src="/javascript/home-page.js"></script>
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdVXKWQ5zqqDvPXzTKszQOUCNi-1Dfeyw&callback=initMap"
+async
+></script>
